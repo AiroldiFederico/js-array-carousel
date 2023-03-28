@@ -15,42 +15,47 @@ Al termine di questa fase ci ritroveremo con lo stesso slider stilato nella mile
 MILESTONE 3
 Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente. */
 
-const prev = document.querySelector('.prev')
-const next = document.querySelector('.next')
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+
+let arrayImage = [
+    'https://picsum.photos/id/860/800/450?grayscale&blur=2',
+    'https://picsum.photos/id/870/800/450?grayscale&blur=2',
+    'https://picsum.photos/id/850/800/450?grayscale&blur=2',
+    'https://picsum.photos/id/840/800/450?grayscale&blur=2',
+    'https://picsum.photos/id/830/800/450?grayscale&blur=2',
+    'https://picsum.photos/id/820/800/450?grayscale&blur=2',
+];
 
 
-next.addEventListener('click', function(){
 
-    //selezionare div con active, prima immagine
-    let activeItem = document.querySelector('.item.active')
+for ( i = 0; i < arrayImage.length; i++ ) {
 
-    let itemToActive = activeItem.nextElementSibling
+    //selezione immagine
+    document.getElementById('test').innerHTML = 
+    `
 
-    if ( activeItem.classList.contains('last')) {
-        itemToActive = document.querySelector('.item.firts')
-    }
+    <div class="item active">
+        <img src="${arrayImage[i]}" alt="">
+    </div>
+    
+    `
+    
+} 
 
-    //rimozione classe active
-    activeItem.classList.remove('active')
 
-    //aggiungere active all'elemento sucessivo
-    itemToActive.classList.add('active')
-})
 
-prev.addEventListener('click', function(){
 
-    //selezionare div con active, prima immagine
-    let activeItem = document.querySelector('.item.active')
 
-    let itemToActive = activeItem.previousElementSibling
 
-    if ( activeItem.classList.contains('first')) {
-        itemToActive = document.querySelector('.item.last')
-    }
 
-    //rimozione classe active
-    activeItem.classList.remove('active')
 
-    //aggiungere active all'elemento sucessivo
-    itemToActive.classList.add('active')
-})
+
+
+
+
+
+
+
+
+
