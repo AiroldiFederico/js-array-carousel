@@ -27,6 +27,12 @@ Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, c
 // ];
 
 
-
+let images = [
+    './asset/img/01.webp',
+    './asset/img/02.webp',
+    './asset/img/03.webp',
+    './asset/img/04.webp',
+    './asset/img/05.webp',
+]
 
 
