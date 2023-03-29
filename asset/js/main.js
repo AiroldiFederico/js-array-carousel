@@ -52,4 +52,18 @@ next.addEventListener('click', function(){
         index = 0;
     }
 
-})
+});
+
+//decremento
+prev.addEventListener('click', function(){
+
+    //uso l'indice array per l'attributo src
+    img.setAttribute('src', images[index]);
+    index--;
+
+    //setto l'indice a 0 quando finisce l'array
+    if (index < 0) {
+        index = images.length - 1;
+    }
+
+});

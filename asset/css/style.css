@@ -20,9 +20,9 @@ body {
 .slider {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
-    background-color: var(--color-2);
+
 }
 
 .next, .prev {
@@ -31,4 +31,18 @@ body {
 
 
 
+.items {
+   width: 50rem;
+   height: 30rem;
+  
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    aspect-ratio: 1;
+    border-radius: 20px;
+    object-fit:cover;
+}
 
