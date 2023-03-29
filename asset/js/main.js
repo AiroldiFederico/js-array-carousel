@@ -35,3 +35,21 @@ let images = [
 let prev = document.querySelector('.prev');
 let next = document.querySelector('.next');
 
+//dichiaro variabile per l'index
+let index = 0;
+
+let img = document.querySelector(".image");
+
+//incremento
+next.addEventListener('click', function(){
+
+    //uso l'indice array per l'attributo src
+    img.setAttribute('src', images[index]);
+    index++;
+
+    //setto l'indice a 0 quando finisce l'array
+    if (index >= images.length) {
+        index = 0;
+    }
+
+})
