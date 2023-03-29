@@ -46,3 +46,14 @@ body {
     object-fit:cover;
 }
 
+
+.thumbs {
+    
+    /* height: 30rem; */
+    width: 20%;
+}
+
+.thumb {
+    height: calc(100% / 5);
+    padding: 0.1rem 0;
+}
