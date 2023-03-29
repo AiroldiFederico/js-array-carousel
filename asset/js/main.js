@@ -17,16 +17,11 @@ Al click dell'utente sulle frecce, il programma cambierà l’immagine attiva, c
 
 
 
-// let arrayImage = [
-//     'https://picsum.photos/id/860/800/450?grayscale&blur=2',
-//     'https://picsum.photos/id/870/800/450',
-//     'https://picsum.photos/id/850/800/450?grayscale&blur=2',
-//     'https://picsum.photos/id/840/800/450?grayscale&blur=2',
-//     'https://picsum.photos/id/830/800/450?grayscale&blur=2',
-//     'https://picsum.photos/id/820/800/450?grayscale&blur=2',
-// ];
 
 
+
+
+// array immagini
 let images = [
     './asset/img/01.webp',
     './asset/img/02.webp',
@@ -35,4 +30,8 @@ let images = [
     './asset/img/05.webp',
 ]
 
+// dichiaro variabili che puntano alle freccie
+// freccia sopra e sotto
+let prev = document.querySelector('.prev');
+let next = document.querySelector('.next');
 
